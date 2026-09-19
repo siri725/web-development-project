@@ -1,17 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Web Development Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Welcome to My Website</h1>
-    <p>This is my Week 1 Web Development Project.</p>
+<header>
+    <h1>My Portfolio</h1>
+    <p>Web Development - Week 1 Project</p>
 
-    <button onclick="showMessage()">Click Me</button>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <script src="script.js"></script>
+<section id="about">
+    <h2>About Me</h2>
+
+    <img src="profile.jpg" alt="My Profile Photo" width="150">
+
+    <p>
+        Hello! I am a BCA student interested in web development.
+        I am learning HTML, CSS and JavaScript and developing my
+        technical skills.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <table border="1">
+        <tr>
+            <th>Course</th>
+            <th>Institution</th>
+            <th>Percentage / CGPA</th>
+        </tr>
+
+        <tr>
+            <td>BCA</td>
+            <td>Government First Grade College</td>
+            <td>7.89 CGPA</td>
+        </tr>
+
+        <tr>
+            <td>PUC</td>
+            <td>GJC Sringeri</td>
+            <td>87%</td>
+        </tr>
+
+        <tr>
+            <td>SSLC</td>
+            <td>GHS</td>
+            <td>92.8%</td>
+        </tr>
+    </table>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Basic Computer Skills</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 My Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
